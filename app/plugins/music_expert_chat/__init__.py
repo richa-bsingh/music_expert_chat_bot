@@ -22,7 +22,7 @@ class MovieExpertChat(Command):
 
     def interact_with_ai(self, user_input, character_name):
         # Generate a more conversational and focused prompt
-        prompt_text = "You're a Movie Expert AI. Engage the user in a natural conversation about their movie preferences. Use your insights to recommend movies they might like."
+        prompt_text = "You're a Music Expert AI. Engage the user in a natural conversation about their music preferences. Use your insights to recommend songs they might like."
         prompt = ChatPromptTemplate.from_messages(self.history + [("system", prompt_text)])
         
         output_parser = StrOutputParser()
